@@ -16,7 +16,7 @@ after_success:
 
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-    - docker push jibinrajck/multi-client
     - docker push jibinrajck/multi-nginx
     - docker push jibinrajck/multi-server
     - docker push jibinrajck/multi-worker
+    - docker push jibinrajck/multi-client
